@@ -8,7 +8,7 @@ rekognition = boto3.client(
 with open("face.jpg", "rb") as f:
     face_image = f.read()
 
-# Perform liveness detection on the face image
+# Perform liveness  detection on the face image
 
 response = rekognition.detect_(
     Image={"Bytes": face_image},
